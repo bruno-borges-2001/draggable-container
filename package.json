@@ -1,7 +1,10 @@
 {
-  "name": "draggable-container",
-  "version": "1.0.0",
-  "description": "Made with create-react-library",
+  "name": "@bruno-borges-2001/draggable-container",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/bruno-borges-2001"
+  },
+  "version": "1.3.1",
+  "description": "a small library to create draggable containers",
   "author": "bruno-borges-2001",
   "license": "MIT",
   "repository": "bruno-borges-2001/draggable-container",
@@ -14,23 +17,12 @@
   "scripts": {
     "build": "microbundle-crl --no-compress --format modern,cjs",
     "start": "microbundle-crl watch --no-compress --format modern,cjs",
-    "prepare": "run-s build",
-    "test": "run-s test:unit test:lint test:build",
-    "test:build": "run-s build",
-    "test:lint": "eslint .",
-    "test:unit": "cross-env CI=1 react-scripts test --env=jsdom",
-    "test:watch": "react-scripts test --env=jsdom",
-    "predeploy": "cd example && yarn install && yarn run build",
-    "deploy": "gh-pages -d example/build"
+    "prepare": "run-s build"
   },
   "peerDependencies": {
     "react": "^16.0.0"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
-    "@types/jest": "^25.1.4",
     "@types/node": "^12.12.38",
     "@types/react": "^16.9.27",
     "@types/react-dom": "^16.9.7",
