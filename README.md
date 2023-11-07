@@ -10,21 +10,6 @@
 npm install --save draggable-container
 ```
 
-## Usage
-
-```tsx
-import React, { Component } from 'react'
-
-import MyComponent from 'draggable-container'
-import 'draggable-container/dist/index.css'
-
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
-}
-```
-
 ## License
 
 MIT © [bruno-borges-2001](https://github.com/bruno-borges-2001)
